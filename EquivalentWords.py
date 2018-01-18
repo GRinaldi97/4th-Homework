@@ -1,11 +1,10 @@
-from generate_graph import generate_graph
 from string import ascii_lowercase as lowercase
 import networkx as nx
 
 file = open('words_alpha.txt', 'r')
 dictionary = set([word for word in file.read().split()])
 
-G = generate_graph(dictionary)
+G=nx.read_gpickle('GeneratedGraph')  #command that allows us to read the generated graph 
 source = 'head'
 target = 'tail'
 
