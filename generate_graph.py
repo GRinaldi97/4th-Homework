@@ -11,6 +11,7 @@
 
 #Moreover we used the same graph both for the first and for the second problem (generalized equivalent words)
 #That is because generalizing the graph required just one more line of code and it was not time consuming
+#Moreover we've used a very useful tool of NetWorkx that is 'pickle' that allows us to save the graph generated (that is uploaded)
 
 
 from string import ascii_lowercase as lowercase
@@ -46,3 +47,4 @@ def generate_graph(words):
     return G
 
 G = generate_graph(dictionary)
+nx.write_gpickle(G,"GeneratedGraph")
