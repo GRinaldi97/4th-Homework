@@ -1,4 +1,3 @@
-from generate_graph import generate_graph
 from string import ascii_lowercase as lowercase
 import networkx as nx
 
